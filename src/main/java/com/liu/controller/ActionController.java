@@ -1,6 +1,9 @@
 package com.liu.controller;
 
+import com.liu.beans.A2;
+import com.liu.beans.Q2;
 import com.liu.beans.User;
+import com.liu.dao.A2Dao;
 import com.liu.dao.UserDao;
 import com.liu.model.LoginStatus;
 import com.liu.model.NorResponse;
@@ -14,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.Map;
@@ -25,7 +29,8 @@ public class ActionController {
     UserService userService;
     @Autowired
     AnswerService answerService;
-
+    @Autowired
+    A2Dao a2Dao;
 
     @RequestMapping("/login")
     NorResponse userlogin(@RequestParam Map<String,Object> param, HttpSession session){
@@ -84,6 +89,25 @@ public class ActionController {
             else
                 return new NorResponse<Integer>(1,"服务器内部错误，答案提交失败",0);
         }
+    }
+
+    @RequestMapping("/question2")
+    NorResponse question2(@RequestParam Map<String,Object> params,HttpServletRequest request,HttpSession session)
+    {
+        String userid = session.getAttribute("userid").toString();
+        String qid = params.get("qid").toString();
+        int mark = Integer.parseInt(params.get("mark").toString());
+        A2 a2 = new A2(userid,qid,mark);
+        a2Dao.save(a2);
+
+        Q2 q2 = answerService.getnextQ2(qid);
+
+        request.setAttribute("qid",q2.getQid());
+        request.setAttribute("qcontent",q2.getQcontent());
+        System.out.println(q2.getQid());
+        System.out.println(q2.getQcontent());
+
+        return new NorResponse<Integer>(1,"返回成功",1);
     }
 
 }

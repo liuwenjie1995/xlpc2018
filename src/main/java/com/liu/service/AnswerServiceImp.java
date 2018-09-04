@@ -24,6 +24,19 @@ public class AnswerServiceImp implements AnswerService {
     Q2Dao q2Dao;
 
     @Override
+    public Q2 getnextQ2(String qid) {
+        if (Integer.parseInt(qid)>=104)
+        {
+            return null;
+        }
+        else
+        {
+            List<Q2> q2List =  q2Dao.findAllByQid(Integer.parseInt(qid)+1);
+            return q2List.get(0);
+        }
+    }
+
+    @Override
     public Q2 getQ2(String userid) {
         List<A2> a2List = a2Dao.findById_Userid(userid);
         int sum = 1;

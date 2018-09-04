@@ -22,6 +22,13 @@ public class A2 {
         this.mark = mark;
     }
 
+    public A2(String userid,String qid,int mark)
+    {
+        Userqid userqid = new Userqid(userid,qid);
+        this.id = userqid;
+        this.mark = mark;
+    }
+
     public Userqid getId() {
         return id;
     }
@@ -46,27 +53,7 @@ public class A2 {
                 '}';
     }
 
-    @Embeddable
-    class Userqid implements Serializable{
-        private String userid;
-        private String qid;
 
-        public String getUserid() {
-            return userid;
-        }
-
-        public void setUserid(String userid) {
-            this.userid = userid;
-        }
-
-        public String getQid() {
-            return qid;
-        }
-
-        public void setQid(String qid) {
-            this.qid = qid;
-        }
-    }
 
 }
 

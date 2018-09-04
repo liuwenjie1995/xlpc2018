@@ -13,7 +13,7 @@
     <div class="container; ">
         <form >
             <label class="col-sm-8 col-sm-offset-3" style="margin-top:200px;font-size:20px">
-                (${Request["qid"]}/104)${Request["qcontent"]}</label>
+                (<b id="qid"></b>/104)<b id="qcontent"></b></label>
             <label class="radio-inline col-sm-1 col-sm-offset-3" style="margin-top:50px;">
                 <input type="radio" name="markdown" id="radio1" value="1"> 没有
             </label>
@@ -35,6 +35,18 @@
 </div>
 </body>
 <script type="text/javascript">
+    $(document).ready(
+        function () {
+            if(${Request["qid"]}!=null)
+            {
+                var text1 = "${Request["qid"]}"+"";
+                $("#qid").text(text1);
+                var text2 = "${Request["qcontent"]}"+"";
+                $("#qcontent").text(text2);
+            }
+
+        }
+    );
 
     $(document).ready(function(){
         $("input").click(function(){
@@ -48,11 +60,13 @@
                         data:
                                 {
                                     qid : qid,
-                                    answer :answer
+                                    mark :answer
                                 },
                         success:function (data) {
-
-
+                            var text1 = "${Request["qid"]}"+"";
+                            $("#id").text(text1);
+                            var text2 = "${Request["qcontent"]}"+"";
+                            $("#qcontent").text(text2);
                         }
 
                     }

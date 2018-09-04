@@ -23,4 +23,5 @@ public interface AnswerService {
                             int q17,
                             int q18);
     public Q2 getQ2(String userid);
+    public Q2 getnextQ2(String qid);
 }
