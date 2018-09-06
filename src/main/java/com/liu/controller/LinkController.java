@@ -39,28 +39,17 @@ public class LinkController {
     @RequestMapping(value = "question2guide",method = RequestMethod.GET)
     String question2guide(){return "/question/question2guide";}
     @RequestMapping(value = "question2",method = RequestMethod.GET)
-    String question2(HttpSession session,HttpServletRequest request){
-
-        if(session.getAttribute("userid")==null)
-        {
-            return "/login";
-        }
-
-        String userid = session.getAttribute("userid").toString();
-
-        if (answerService.getQ2(userid)!=null)
-        {
-            Q2 q2 = answerService.getQ2(userid);
-            int qid = q2.getQid();
-            String qcontent = q2.getQcontent();
-         request.setAttribute("qid",qid);
-         request.setAttribute("qcontent",qcontent);
-        }
-        return "/question/question2";}
+    String question2(){ return "/question/question2";}
     @RequestMapping(value = "question4guide",method = RequestMethod.GET)
     String question4guide(){return "/question/question4guide";}
     @RequestMapping(value = "question4",method = RequestMethod.GET)
     String question4(){return "/question/question4";}
     @RequestMapping(value = "teacherinf",method = RequestMethod.GET)
-    String teacherinf(){return "/introduce/teacher";}
+    String teacherinf(HttpSession session){ return "/introduce/teacher";}
+    @RequestMapping(value = "stumanager",method = RequestMethod.GET)
+    String manager(){return "/stumanager";}
+    @RequestMapping(value = "back",method = RequestMethod.GET)
+    String back(HttpSession session){
+        session.setAttribute("userid",null);
+        return "/main/login";}
 }

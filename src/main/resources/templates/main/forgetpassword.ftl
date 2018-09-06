@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     -->
 
-    <link rel="stylesheet"  type="text/css"  href="/showassert/css/bootstrap.css"/>
+    <link rel="stylesheet"  type="text/css"  href="showassert/css/bootstrap.css"/>
     <style type="text/css">
         body{
             text-align:center;

@@ -3,6 +3,8 @@ package com.liu.beans;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "stuinf")
@@ -52,6 +54,30 @@ public class AInf {
         this.q16 = q16;
         this.q17 = q17;
         this.q18 = q18;
+    }
+    public List<String> toList()
+    {
+        List<String> list = new ArrayList<>();
+        list.add(getUserid());
+        list.add(getQ1());
+        list.add(getQ2());
+        list.add(String.valueOf(getQ3()));
+        list.add(String.valueOf(getQ4()));
+        list.add(getQ5());
+        list.add(String.valueOf(getQ6()));
+        list.add(String.valueOf(getQ7()));
+        list.add(String.valueOf(getQ8()));
+        list.add(String.valueOf(getQ9()));
+        list.add(String.valueOf(getQ10()));
+        list.add(String.valueOf(getQ11()));
+        list.add(String.valueOf(getQ12()));
+        list.add(String.valueOf(getQ13()));
+        list.add(String.valueOf(getQ14()));
+        list.add(String.valueOf(getQ15()));
+        list.add(String.valueOf(getQ16()));
+        list.add(String.valueOf(getQ17()));
+        list.add(String.valueOf(getQ18()));
+        return list;
     }
 
     public String getUserid() {

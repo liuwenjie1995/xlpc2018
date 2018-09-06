@@ -45,25 +45,5 @@ public class A4 {
                 '}';
     }
 
-    @Embeddable
-    class Userqid implements Serializable{
-        private String userid;
-        private int qid;
 
-        public String getUserid() {
-            return userid;
-        }
-
-        public void setUserid(String userid) {
-            this.userid = userid;
-        }
-
-        public int getQid() {
-            return qid;
-        }
-
-        public void setQid(int qid) {
-            this.qid = qid;
-        }
-    }
 }

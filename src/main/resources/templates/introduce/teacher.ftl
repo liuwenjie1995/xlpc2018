@@ -6,14 +6,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>心理中心简介</title>
-    <link rel="stylesheet"  type="text/css"  href="/teachassert/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/teachassert/css/style.css">
+    <link rel="stylesheet"  type="text/css"  href="teachassert/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="teachassert/css/style.css">
 
     <script type="text/javascript" src="/jQuery/jquery-3.2.1.min.js"></script>
-    <script src="/teachassert/js/modernizr.js"></script>
+    <script src="teachassert/js/modernizr.js"></script>
     <!--[if lt IE 9]>
-    <script src="/teachassert/js/html5shiv.js"></script>
-    <script src="/teachassert/js/respond.min.js"></script>
+    <script src="teachassert/js/html5shiv.js"></script>
+    <script src="teachassert/js/respond.min.js"></script>
     <![endif]-->
     <script type="text/javascript">
         $(document).ready(
@@ -37,7 +37,7 @@ header section -->
         <div class="row">
             <div class="col-xs-5 header-logo">
                 <br>
-                <a href="index.html"><img src="/teachassert/img/tubiao.png" alt="" class="img-responsive logo"></a>
+                <a href="index.html"><img src="teachassert/img/tubiao.png" alt="" class="img-responsive logo"></a>
             </div>
 
             <div class="col-md-7">
@@ -78,24 +78,21 @@ header section -->
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="/teachassert/img/ziyuan1.jpg" alt="">
+                        <img src="teachassert/img/ziyuan1.jpg" alt="">
                         <div class="carousel-caption">
                             <p>沟通从心开始</p>
-                            <button >服务时间</button>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="/teachassert/img/ziyuan2.jpg" alt="">
+                        <img src="teachassert/img/ziyuan2.jpg" alt="">
                         <div class="carousel-caption">
                             <p>沟通从心开始</p>
-                            <button>服务时间</button>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="/teachassert/img/ziyuan3.jpg" alt="">
+                        <img src="teachassert/img/ziyuan3.jpg" alt="">
                         <div class="carousel-caption">
                             <p>沟通从心开始</p>
-                            <button>服务时间</button>
                         </div>
                     </div>
 
@@ -125,7 +122,7 @@ header section -->
             <div class="col-md-6 col-sm-6">
                 <div class="single-about-detail clearfix">
                     <div class="about-img">
-                        <img class="img-responsive" src="/teachassert/img/home3.jpg" alt="">
+                        <img class="img-responsive" src="teachassert/img/home3.jpg" alt="">
                     </div>
                     <div class="about-details">
                         <div class="pentagon-text">
@@ -142,7 +139,7 @@ header section -->
             <div class="col-md-6 col-sm-6">
                 <div class="single-about-detail">
                     <div class="about-img">
-                        <img class="img-responsive" src="/teachassert/img/home2.jpg" alt="">
+                        <img class="img-responsive" src="teachassert/img/home2.jpg" alt="">
                     </div>
                     <div class="about-details">
                         <div class="pentagon-text">
@@ -211,7 +208,7 @@ header section -->
             </div>
             <div class="col-md-3 single-member col-sm-4">
                 <div class="person">
-                    <img class="img-responsive" src="/teachassert/img/twxy.jpg" alt="member-1">
+                    <img class="img-responsive" src="teachassert/img/twxy.jpg" alt="member-1">
                 </div>
                 <div class="person-detail">
                     <div class="arrow-bottom"></div>
@@ -226,12 +223,12 @@ header section -->
                     <p>心理学博士，副教授，硕士生导师。擅长应用来访者中心、认知行为、森田、精神分析、短程心理等咨询技术。主要心理咨询领域包括：青少年学习、职业生涯规划、人际关系、情绪调控及心理减压、亲子沟通、婚恋情感及性心理等问题和团体心理咨询。</p>
                 </div>
                 <div class="person">
-                    <img class="img-responsive" src="/teachassert/img/txw.jpg" alt="member-2">
+                    <img class="img-responsive" src="teachassert/img/txw.jpg" alt="member-2">
                 </div>
             </div>
             <div class="col-md-3 single-member col-sm-4">
                 <div class="person">
-                    <img class="img-responsive" src="/teachassert/img/txj.jpg" alt="member-3">
+                    <img class="img-responsive" src="teachassert/img/txj.jpg" alt="member-3">
                 </div>
                 <div class="person-detail">
                     <div class="arrow-bottom"></div>
@@ -246,7 +243,7 @@ header section -->
                     <p>医学博士，讲师，主治医师。主要咨询方向：大学生人格与个性、人际关系、情绪、发展等。擅长采用认知行为、人本主义、精神分析等咨询技术 </p>
                 </div>
                 <div class="person">
-                    <img class="img-responsive" src="/teachassert/img/tpy.jpg" alt="member-4">
+                    <img class="img-responsive" src="teachassert/img/tpy.jpg" alt="member-4">
                 </div>
             </div>
 
@@ -267,11 +264,11 @@ header section -->
 
 <!-- script tags
 ============================================================= -->
-<script src="/teachassert/js/jquery-2.1.1.js"></script>
+<script src="teachassert/js/jquery-2.1.1.js"></script>
 
-<script src="/teachassert/js/gmaps.js"></script>
-<script src="/teachassert/js/smoothscroll.js"></script>
-<script src="/teachassert/js/bootstrap.min.js"></script>
-<script src="/teachassert/js/custom.js"></script>
+<script src="teachassert/js/gmaps.js"></script>
+<script src="teachassert/js/smoothscroll.js"></script>
+<script src="teachassert/js/bootstrap.min.js"></script>
+<script src="teachassert/js/custom.js"></script>
 </body>
 </html>

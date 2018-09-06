@@ -23,8 +23,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>输入个人信息</title>
-    <link rel="stylesheet"  type="text/css"  href="/showassert/css/bootstrap.css"/>
-    <script type="text/javascript" src="/jQuery/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet"  type="text/css"  href="showassert/css/bootstrap.css"/>
+    <script type="text/javascript" src="jQuery/jquery-3.2.1.min.js"></script>
 </head>
 
 <body style="text-align:center;">
@@ -39,7 +39,7 @@
         </div>
 
         <div class="form-group">
-            <label class="col-sm-4 control-label">手机</label>
+            <label class="col-sm-4 control-label">电子邮件</label>
             <div class="col-sm-6">
                 <input type="text" class="form-control"  name="q2">
             </div>
@@ -58,7 +58,7 @@
         </div>
 
         <div class="form-group">
-            <label class="col-sm-4 control-label">总体来说，大学学习、生活是否符合你期待</label>
+            <label class="col-sm-4 control-label">婚否</label>
             <div class="col-sm-8">
                 <label class="radio-inline col-sm-4">
                     <input type="radio" name="q4"  value="1"> 是
@@ -70,14 +70,14 @@
         </div>
 
         <div class="form-group">
-            <label class="col-sm-4 control-label">你想说明的个人情况（限于20  字以内）</label>
+            <label class="col-sm-4 control-label">手机号</label>
             <div class="col-sm-6">
                 <input type="text" class="form-control"  name="q5" id="q5">
             </div>
         </div>
 
         <div class="form-group">
-            <label class="col-sm-4 control-label">学校是否第一志愿</label>
+            <label class="col-sm-4 control-label">是否是独生子女</label>
             <div class="col-sm-8">
                 <label class="radio-inline col-sm-4">
                     <input type="radio" name="q6"  value="1"> 是
@@ -89,7 +89,7 @@
         </div>
 
         <div class="form-group">
-            <label class="col-sm-4 control-label">所学专业是否是第一志愿</label>
+            <label class="col-sm-4 control-label">是否是第一志愿入学</label>
             <div class="col-sm-8">
                 <label class="radio-inline col-sm-4">
                     <input type="radio" name="q7"  value="1"> 是
@@ -101,7 +101,7 @@
         </div>
 
         <div class="form-group">
-            <label class="col-sm-4 control-label">对所学专业是否满意</label>
+            <label class="col-sm-4 control-label">是否来自城市</label>
             <div class="col-sm-8">
                 <label class="radio-inline col-sm-4">
                     <input type="radio" name="q8"  value="1"> 是
@@ -113,7 +113,7 @@
         </div>
 
         <div class="form-group">
-            <label class="col-sm-4 control-label">是否有换专业的想法</label>
+            <label class="col-sm-4 control-label">有无留守经历或儿童期与父母长期分离经历</label>
             <div class="col-sm-8">
                 <label class="radio-inline col-sm-4">
                     <input type="radio" name="q9"  value="1">有
@@ -125,7 +125,7 @@
         </div>
 
         <div class="form-group">
-            <label class="col-sm-4 control-label">高中是否复读过 </label>
+            <label class="col-sm-4 control-label">是否是单亲或重组家庭 </label>
             <div class="col-sm-8">
                 <label class="radio-inline col-sm-4">
                     <input type="radio" name="q10"  value="1">是
@@ -137,7 +137,7 @@
         </div>
 
         <div class="form-group">
-            <label class="col-sm-4 control-label">中小学是否有过转学经历 </label>
+            <label class="col-sm-4 control-label">是否是第一次考研 </label>
             <div class="col-sm-8">
                 <label class="radio-inline col-sm-4">
                     <input type="radio" name="q11"  value="1">是
@@ -161,7 +161,7 @@
         </div>
 
         <div class="form-group">
-            <label class="col-sm-4 control-label">是否是独生子女</label>
+            <label class="col-sm-4 control-label">中小学是否有过转学经历</label>
             <div class="col-sm-8">
                 <label class="radio-inline col-sm-4">
                     <input type="radio" name="q13"  value="1">是
@@ -179,7 +179,7 @@
 
             </div>
             <div class="form-group">
-                <label class="col-sm-4 control-label">是否是单亲家庭</label>
+                <label class="col-sm-4 control-label">有无读博计划</label>
                 <div class="col-sm-8">
                     <label class="radio-inline col-sm-4">
                         <input type="radio" name="q14"  value="1">是
@@ -191,7 +191,7 @@
             </div>
 
             <div class="form-group">
-                <label class="col-sm-4 control-label">是否是重组家庭</label>
+                <label class="col-sm-4 control-label">是否有工作经验</label>
                 <div class="col-sm-8">
                     <label class="radio-inline col-sm-4">
                         <input type="radio" name="q15"  value="1">是
@@ -203,7 +203,7 @@
             </div>
 
             <div class="form-group">
-                <label class="col-sm-4 control-label">有无留守经历或儿童期与父母长期分离经历</label>
+                <label class="col-sm-4 control-label">本科是否在北京化工大学就读</label>
                 <div class="col-sm-8">
                     <label class="radio-inline col-sm-4">
                         <input type="radio" name="q16"  value="1">是
@@ -215,7 +215,7 @@
             </div>
 
             <div class="form-group">
-                <label class="col-sm-4 control-label">是否在多子女（三个或以上）家庭</label>
+                <label class="col-sm-4 control-label">是否跨专业</label>
                 <div class="col-sm-8">
                     <label class="radio-inline col-sm-4">
                         <input type="radio" name="q17"  value="1">是
@@ -248,6 +248,16 @@
 	  在网页中添加判断，若某个信息未填写会变成红色，并且不能提交
  -->
 <script type="text/javascript">
+                $(document).ready(
+                    function () {
+                        var user = "${Session["userid"]}"+"";
+                        if(user==="manager")
+                        {
+                            window.location.replace("/login");
+                        }
+                    }
+                );
+
                 $("#postbutton").click(
                         function()
                         {

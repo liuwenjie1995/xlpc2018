@@ -16,12 +16,19 @@ import java.util.List;
 
 @Service
 public class AnswerServiceImp implements AnswerService {
-    @Autowired
+    final
     InfDao infDao;
-    @Autowired
+    final
     A2Dao a2Dao;
-    @Autowired
+    final
     Q2Dao q2Dao;
+
+    @Autowired
+    public AnswerServiceImp(InfDao infDao, A2Dao a2Dao, Q2Dao q2Dao) {
+        this.infDao = infDao;
+        this.a2Dao = a2Dao;
+        this.q2Dao = q2Dao;
+    }
 
     @Override
     public Q2 getnextQ2(String qid) {

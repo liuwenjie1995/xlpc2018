@@ -2,9 +2,9 @@
 <html>
 <head>
     <title>大学生心理健康问卷调查系统</title>
-    <script src="/loginassert/js/jquery.min.js"></script>
+    <script src="loginassert/js/jquery.min.js"></script>
     <!-- Custom Theme files -->
-    <link href="/loginassert/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="loginassert/css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- for-mobile-apps -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -76,6 +76,22 @@
                                 if (1===data["data"]["status"])
                                 {
                                     window.location.replace("/question1");
+                                }
+                                else if (2===data["data"]["status"])
+                                {
+                                    window.location.replace("/question2guide");
+                                }
+                                else if (4===data["data"]["status"])
+                                {
+                                    window.location.replace("/question4guide");
+                                }
+                                else if (5===data["data"]["status"])
+                                {
+                                    window.location.replace("/teacherinf");
+                                }
+                                else if (6===data["data"]["status"])
+                                {
+                                    window.location.replace("/stumanager ");
                                 }
                                 else
                                 {

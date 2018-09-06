@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
@@ -12,7 +11,7 @@
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
     <meta http-equiv="description" content="This is my page">
 
-    <link rel="stylesheet"  type="text/css"  href="/showassert/css/bootstrap.css"/>
+    <link rel="stylesheet"  type="text/css"  href="showassert/css/bootstrap.css"/>
     <style type="text/css">
         body{
             background-image: url(/showassert/image/gudiebg.jpg);
