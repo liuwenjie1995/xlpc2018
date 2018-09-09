@@ -44,6 +44,8 @@ public class LinkController {
     String question4guide(){return "/question/question4guide";}
     @RequestMapping(value = "question4",method = RequestMethod.GET)
     String question4(){return "/question/question4";}
+    @RequestMapping(value = "error",method = RequestMethod.GET)
+    String error(){return "/main/error";}
     @RequestMapping(value = "teacherinf",method = RequestMethod.GET)
     String teacherinf(HttpSession session){ return "/introduce/teacher";}
     @RequestMapping(value = "stumanager",method = RequestMethod.GET)
